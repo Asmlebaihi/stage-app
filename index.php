@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ProClinic-Bootstrap4 Hospital Admin</title>
+	<title>Index</title>
 	<!-- Fav  Icon Link -->
 	<link rel="shortcut icon" type="image/png" href="images/fav.png">
 	<!-- Bootstrap core CSS -->
@@ -54,29 +54,32 @@
 		<!-- Sidebar -->
 		<nav id="sidebar" class="proclinic-bg">
 			<div class="sidebar-header">
-				<a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+				<a href="index.php"><img src="images/logo.png" class="logo" alt="logo"></a>
 			</div>
+
 			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="#nav-dashboard" data-toggle="collapse" aria-expanded="true">
-						<span class="ti-home"></span> Dashboard
+					<li class="active">
+					<a href="#nav-dashboard">
+						<span class="ti-home"></span>  Dashboard
 					</a>
-				<li>
+				</li>
+
+					<li>
 					<a href="#nav-patients" data-toggle="collapse" aria-expanded="false">
 						<span class="ti-wheelchair"></span> Patients
 					</a>
 					<ul class="collapse list-unstyled" id="nav-patients">
 						<li>
-							<a href="add-patient.html">Ajouter Patient</a>
+							<a href="add-patient.php">Ajouter Patient</a>
 						</li>
 						<li>
-							<a href="patients.html">Liste des patients</a>
+							<a href="patientslist.php">Liste des patients</a>
 						</li>
 						<li>
-							<a href="about-patient.html">Details du patients</a>
+							<a href="about-patient.php">Details du patients</a>
 						</li>
 						<li>
-							<a href="edit-patient.html">Modifier patient</a>
+							<a href="edit-patient.php">Modifier patient</a>
 						</li>
 					</ul>
 				</li>
@@ -86,16 +89,16 @@
 					</a>
 					<ul class="collapse list-unstyled" id="nav-doctors">
 						<li>
-							<a href="add-doctor.html">Ajouter doctor</a>
+							<a href="add-doctor.php">Ajouter docteurs</a>
 						</li>
 						<li>
-							<a href="doctors.html">Liste du docteurs</a>
+							<a href="t.php">Liste des docteurs</a>
 						</li>
 						<li>
-							<a href="about-doctor.html">details du docteur</a>
+							<a href="doctor-tetails.php">details du docteur</a>
 						</li>
 						<li>
-							<a href="edit-doctor.html">Modifier doctor</a>
+							<a href="edit-doctor.php">Modifier docteur</a>
 						</li>
 					</ul>
 				</li>
@@ -105,64 +108,20 @@
 					</a>
 					<ul class="collapse list-unstyled" id="nav-appointment">
 						<li>
-							<a href="add-appointment.html">Ajouter Appointment</a>
+							<a href="add-appointment.php">Ajouter un rendez-vous</a>
 						</li>
 						<li>
-							<a href="appointments.html">Listes des appointments</a>
+							<a href="appointments.php">Listes des rendez-vous</a>
 						</li>
 						<li>
-							<a href="about-appointment.html">details des appointment </a>
+							<a href="about-appointment.php">details des rendez-vous </a>
 						</li>
 						<li>
-							<a href="edit-appointment.html">Modifier Appointment</a>
+							<a href="edit-appointment.php">Modifier un rendez-vous</a>
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="#nav-rooms" data-toggle="collapse" aria-expanded="false">
-						<span class="ti-key"></span> Room Allotments
-					</a>
-					<ul class="collapse list-unstyled" id="nav-rooms">
-						<li>
-							<a href="add-room.html">Add Room Allotment</a>
-						</li>
-						<li>
-							<a href="rooms.html">All Rooms</a>
-						</li>
-						<li>
-							<a href="edit-room.html">Edit Room Allotment</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="tables.html">
-						<span class="ti-layout-menu-v"></span> Tables
-					</a>
-				</li>
-				<li>
-					<a href="forms.html">
-						<span class="ti-layout-media-overlay-alt-2"></span> Forms
-					</a>
-				</li>
-				<li>
-					<a href="#nav-pages" data-toggle="collapse" aria-expanded="false">
-						<span class="ti-file"></span> Other Pages
-					</a>
-					<ul class="collapse list-unstyled" id="nav-pages">
-						<li>
-							<a href="login.html">Login </a>
-						</li>
-						<li>
-							<a href="sign-up.html">Sign Up</a>
-						</li>
-						<li>
-							<a href="404.html">404</a>
-						</li>
-						<li>
-							<a href="blank-page.html">Blank Page</a>
-						</li>
-					</ul>
-				</li>
+				
 			</ul>
 			<div class="nav-help animated fadeIn">
 				<h5><span class="ti-comments"></span> Need Help</h5>
@@ -170,7 +129,7 @@
 					<span class="ti-mobile"></span> +1 1234 567 890</h6>
 				<h6>
 					<span class="ti-email"></span> email@site.com</h6>
-				<p class="copyright-text">Copy rights &copy; 2018</p>
+				<p class="copyright-text">Copy rights &copy; 2019</p>
 			</div>
 		</nav>
 		<!-- /Sidebar -->
@@ -180,7 +139,7 @@
 			<nav class="navbar navbar-default">
 				<div class="container-fluid">
 					<div class="responsive-logo">
-						<a href="index.html"><img src="images/logo-dark.png" class="logo" alt="logo"></a>
+						<a href="index.php"><img src="images/logo-dark.png" class="logo" alt="logo"></a>
 					</div>
 					<ul class="nav">
 						<li class="nav-item">
@@ -236,12 +195,10 @@
 							</a>
 							<div class="dropdown-menu proclinic-box-shadow2 profile animated flipInY">
 								<h5>Hassan</h5>
-								<a class="dropdown-item" href="#">
-									<span class="ti-settings"></span> Settings</a>
-								<a class="dropdown-item" href="#">
-									<span class="ti-help-alt"></span> Help</a>
-								<a class="dropdown-item" href="#">
-									<span class="ti-power-off"></span> Logout</a>
+								<a class="dropdown-item" href="profile.php">
+									<span class="ti-settings"></span>Profile</a>
+								<a class="dropdown-item" href="phplogout.php">
+									<span class="ti-power-off"></span>Déconnection</a>
 							</div>
 						</li>
 					</ul>
